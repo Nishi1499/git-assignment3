@@ -1,1 +1,42 @@
+HP@LAPTOP-Nishi MINGW64 ~/Desktop/First Git Repo (master)
+$ git commit -a -m "direct commit"
+[master bcb74ed] direct commit
+ 2 files changed, 2 deletions(-)
+ delete mode 100644 index.txt.txt
+ delete mode 100644 utils.txt.txt
+
+HP@LAPTOP-Nishi MINGW64 ~/Desktop/First Git Repo (master)
+$ git mv <myText.txt>  <NewFile.txt>                                                                                                                                    bash: syntax error near unexpected token `<'
+
+HP@LAPTOP-Nishi MINGW64 ~/Desktop/First Git Repo (master)
+$ git mv < myText.txt >  < NewFile.txt >                                                                                                                                bash: syntax error near unexpected token `<'
+
+HP@LAPTOP-Nishi MINGW64 ~/Desktop/First Git Repo (master)
+$ git mv  myText.txt    NewFile.txt 
+
+HP@LAPTOP-Nishi MINGW64 ~/Desktop/First Git Repo (master)
+$
+
+HP@LAPTOP-Nishi MINGW64 ~/Desktop/First Git Repo (master)
+$ git commit --message 'Rename the file name '
+[master 2c388d3] Rename the file name
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename myText.txt => NewFile.txt (100%)
+
+HP@LAPTOP-Nishi MINGW64 ~/Desktop/First Git Repo (master)
+$ git rm NewFile.txt                                                                                                                                                    rm 'NewFile.txt'
+
+HP@LAPTOP-Nishi MINGW64 ~/Desktop/First Git Repo (master)
+$ git status                                                                                                                                                            On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    NewFile.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        error.log
+        gitignore
+        opencv/
+        utils.txt
 
